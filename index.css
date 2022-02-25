@@ -16,6 +16,8 @@ body {
   height: 100vh;
   background-image: url("https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-size: cover;
+
+  background-repeat: no-repeat;
 }
 body::after {
   content: "";
@@ -25,12 +27,11 @@ body::after {
   right: 0;
   background-color: black;
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.55;
   z-index: -1;
 }
 header {
   width: 100%;
-  
 }
 
 nav {
@@ -80,32 +81,58 @@ main {
 .name h1 {
   font-size: 4rem;
   font-weight: 400;
-  letter-spacing:2;
+  letter-spacing: 2;
 }
 .name h4 {
   font-weight: 300;
   word-spacing: 2px;
   letter-spacing: 2.5px;
 }
-.line{
-    background-color: #05716C;
-    width: 2px;
-    align-self: center;
-    height: 200px;
-    max-height: 30%;
+.line {
+  background-color: #05716c;
+  width: 2px;
+  align-self: center;
+  height: 200px;
+  max-height: 30%;
 }
-.explore{
-    align-self: center;
+.explore {
+  align-self: center;
 }
-.explore button{
-    padding: 15px 70px;
-    background: transparent;
-    border: 1px solid #05716C;
+.explore button {
+  padding: 15px 70px;
+  background: transparent;
+  border: 1px solid #05716c;
+}
+.explore button a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2.5px;
+  font-size: 1.5rem;
+}
 
+.location {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
 }
-.explore button a{
-    color: white;
-    text-decoration: none;
-    letter-spacing: 2.5px;
-    font-size: 1.5rem;
+.county {
+  color: white;
+  text-align: center;
+}
+
+.county p{
+    transform: rotate(-90deg);
+    letter-spacing: 2px;
+    
+}
+.line2 {
+  background-color: #05716c;
+  width: 2px;
+  align-self: center;
+  height: 450px;
+  max-height: 40%;
+  
 }
