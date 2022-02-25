@@ -10,53 +10,157 @@
 html {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
-} 
-  
-  body{
-      background-color: black;
-  }
+}
+
+body {
+  background-color: black;
+}
 header {
-    width: 100%;
-  }
+  width: 100%;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.nav-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-size: 400;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.socials a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.details ion-icon {
+  font-size: 20px;
+  background-color: blue;
+}
+
+.work {
+  width: 100%;
+  margin-top: 20px 0;
+}
+.work__container {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.work__container h3 {
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2;
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+}
+.work__container h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 5%;
+  right: 48%;
+  margin-bottom: -10px;
+  height: 2px;
+  background-color: #05716c;
+}
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "a  d c "
+    "b  e c";
+  width: 70%;
+  gap: 20px;
+  margin: 100px auto;
+}
+
+.lux {
+  grid-area: a;
+  max-height: 300px;
+}
+.lux img {
+  height: 95%;
+  width: 100%;
+}
+.quizapp {
+  grid-area: b;
+  max-height: 300px;
+}
+
+.quizapp img {
+  height: 95%;
+  width: 100%;
+}
+.ins {
+  grid-area: c;
+  max-height: 600px;
+}
+
+.ins img {
+  width: 100%;
+  height: 98%;
+}
+
+.app_gallery {
+  grid-area: d;
+  max-height: 300px;
+}
+
+.app_gallery img {
+  height: 95%;
+  width: 100%;
+}
+
+.netflix {
+  grid-area: e;
+  max-height: 300px;
+}
+
+.netflix img {
+  height: 95%;
+  width: 100%;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around
   
-  nav {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-  }
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-  }
-  .nav-link a {
-    color: white;
+}
+.details a{
+    color: #fff;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-size: 400;
-  }
-  
-  .socials {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .socials a {
-    color: white;
-    font-size: 1.5rem;
-  }
+    position: relative;
+}
+.details a::before{
+    content: "";
+    background-color: #05716c;
+    position: absolute;
+    top: 45%;
+    left:-25%;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
 
-  .details ion-icon{
-      font-size: 20px;
-      background-color: blue; 
-  }
-
-  .lux_image img{
-      width: 300px;
-      height: 400px;
-      
-  }
-
-  
+    
+}
+.projects img{
+      border-radius: 5px;
+}
