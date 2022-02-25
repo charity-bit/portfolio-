@@ -19,9 +19,9 @@
     <header>
       <nav>
         <ul class="nav-links">
-          <li class="nav-link"><a href="#">Work</a></li>
+          <li class="nav-link"><a href="#work">Work</a></li>
           <li class="nav-link"><a href="#">About</a></li>
-          <li class="nav-link"><a href="#">contact</a></li>
+          <li class="nav-link"><a href="#contact">contact</a></li>
           <li class="nav-link"><a href="#">Education</a></li>
         </ul>
         <div class="socials">
@@ -33,16 +33,20 @@
       </nav>
     </header>
 
-    <section class="work">
+    <section class="work" id="work">
       <div class="work__container">
-        <h3>Projects</h3>
+        <h3 class="section__title ">Projects</h3>
         <div class="projects">
           <div class="lux">
             <img
               src="https://images.pexels.com/photos/2832382/pexels-photo-2832382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               alt="photography"
             />
-
+            <!-- <p>
+              lux magenta is a website that showcases the work pf a local
+              photography company by advertising the work of their individual
+              photographers
+            </p> -->
             <div class="details">
               <a href="#">live link</a>
               <a href="#">github repo</a>
@@ -94,6 +98,50 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class=" " id="contact">
+        <h3 class="section__title ">Get in touch</h3>
+      
+      <div class="contact__container">
+        
+        <div class="contact__me">
+          <h1>Hit Me Up</h1>
+          <p class="collaborate">
+            Do you have an idea and need help bringing it to life? Or do you
+            have a project you would like collaborate with? Then please reach
+            out, I would love to hear more about your project and how I can
+            help.
+          </p>
+             <div class="reachme">
+                <ion-icon name="call-outline"></ion-icon>
+                <p>0741818156</p>
+                  
+             </div>
+             <div class="reachme">
+                <ion-icon name="mail-outline"></ion-icon>
+                <p>orina.nyanchera@moringaschool.com</p>
+             </div>
+        </div>
+        <form class="contact__form">
+             <div class="fnames">
+                 <p>Full Names</p>
+                 <input type="text">
+             </div>
+             <div class="email">
+                 <p>Email</p>
+                 <input type="email">
+             </div>
+             <div class="message">
+                 <p>Type your message</p>
+                <input type="text">
+             </div>
+             <button class="submit_btn">
+                 <a href="#"> Send Message</a>
+             </button>
+
+        </form>
       </div>
     </section>
   </body>

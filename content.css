@@ -62,7 +62,7 @@ nav {
   margin: 30px auto;
 }
 
-.work__container h3 {
+.section__title {
   color: white;
   font-weight: 500;
   letter-spacing: 2;
@@ -70,7 +70,7 @@ nav {
   font-size: 2rem;
   position: relative;
 }
-.work__container h3::after {
+.section__title::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -95,7 +95,21 @@ nav {
 .lux {
   grid-area: a;
   max-height: 300px;
+  /* position: relative; */
 }
+
+/* .lux p{
+    position: absolute;
+    color: white;
+    max-width: 200px;
+    top:50%;
+    left:50%;
+    opacity: 0;;
+    transition: translate(-50%,-50%)
+}
+.lux:hover p{
+    opacity: 1;
+} */
 .lux img {
   height: 95%;
   width: 100%;
@@ -141,26 +155,111 @@ nav {
 
 .details {
   display: flex;
-  justify-content: space-around
-  
+  justify-content: space-around;
 }
-.details a{
-    color: #fff;
-    text-decoration: none;
-    position: relative;
+.details a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
 }
-.details a::before{
-    content: "";
-    background-color: #05716c;
-    position: absolute;
-    top: 45%;
-    left:-25%;
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
+.details a::before {
+  content: "";
+  background-color: #05716c;
+  position: absolute;
+  top: 45%;
+  left: -25%;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+}
+.projects img {
+  border-radius: 5px;
+}
 
+/* contact section */
+
+.contact {
+  width: 100%;
+  padding-top: 20px;
+}
+.contact__container {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+}
+
+.contact__me {
+  color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contact__me h1 {
+  font-weight: 600;
+  letter-spacing: 2;
+  font-size: 2.5rem;
+}
+.collaborate {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  width: 80%;
+  text-align: justify;
+}
+
+.reachme{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.reachme ion-icon{
+    color: #05716c;
+    font-size: 2rem;
+}
+.reachme p{
+    font-size: 1.2rem;
+}
+.contact__form {
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 40px;
+}
+.fnames,.email,.message{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact__form p{
+    font-size: 1.2rem;
+}
+.contact__form input{
+    outline: none;
+    border-bottom: 1px solid #05716c;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+}
+.submit_btn{
+    border: 1px solid #05716c;
+    background-color: transparent;
+    padding: 15px 0;
+    width: 30%;
+    border-radius: 10px;
+    align-self: flex-end;
+    
     
 }
-.projects img{
-      border-radius: 5px;
+.submit_btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
 }
+
+
+
