@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+body {
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
+}
+body::after {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+}
+header {
+  width: 100%;
+  
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.nav-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-size: 400;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.socials a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.name {
+  color: white;
+}
+.name h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing:2;
+}
+.name h4 {
+  font-weight: 300;
+  word-spacing: 2px;
+  letter-spacing: 2.5px;
+}
+.line{
+    background-color: #05716C;
+    width: 2px;
+    align-self: center;
+    height: 200px;
+    max-height: 30%;
+}
+.explore{
+    align-self: center;
+}
+.explore button{
+    padding: 15px 70px;
+    background: transparent;
+    border: 1px solid #05716C;
+
+}
+.explore button a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+    font-size: 1.5rem;
+}
