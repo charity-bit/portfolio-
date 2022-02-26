@@ -19,23 +19,27 @@
     <header>
       <nav>
         <ul class="nav-links">
-          <li class="nav-link"><a href="#work">Work</a></li>
-          <li class="nav-link"><a href="#">About</a></li>
-          <li class="nav-link"><a href="#contact">contact</a></li>
-          <li class="nav-link"><a href="#">Education</a></li>
+          <li class="nav-link"><a class="navi" href="#work">Work</a></li>
+          <li class="nav-link"><a class="navi" href="#">About</a></li>
+          <li class="nav-link"><a class="navi" href="#contact">contact</a></li>
+          <li class="nav-link"><a class="navi" href="#">Education</a></li>
         </ul>
         <div class="socials">
           <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
           <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
           <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
           <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+            <button class="theme">
+              <ion-icon name="sunny-outline"></ion-icon>
+            </button>
+          
         </div>
       </nav>
     </header>
 
     <section class="work" id="work">
       <div class="work__container">
-        <h3 class="section__title ">Projects</h3>
+        <h3 class="section__title">Projects</h3>
         <div class="projects">
           <div class="lux">
             <img
@@ -101,11 +105,10 @@
       </div>
     </section>
 
-    <section class=" " id="contact">
-        <h3 class="section__title ">Get in touch</h3>
-      
+    <section class="contact" id="contact">
+      <h3 class="section__title">Get in touch</h3>
+
       <div class="contact__container">
-        
         <div class="contact__me">
           <h1>Hit Me Up</h1>
           <p class="collaborate">
@@ -114,35 +117,42 @@
             out, I would love to hear more about your project and how I can
             help.
           </p>
-             <div class="reachme">
-                <ion-icon name="call-outline"></ion-icon>
-                <p>0741818156</p>
-                  
-             </div>
-             <div class="reachme">
-                <ion-icon name="mail-outline"></ion-icon>
-                <p>orina.nyanchera@moringaschool.com</p>
-             </div>
+          <div class="reachme">
+            <ion-icon name="call-outline"></ion-icon>
+            <p>0741818156</p>
+          </div>
+          <div class="reachme">
+            <ion-icon name="mail-outline"></ion-icon>
+            <p>orina.nyanchera@moringaschool.com</p>
+          </div>
         </div>
         <form class="contact__form">
-             <div class="fnames">
-                 <p>Full Names</p>
-                 <input type="text">
-             </div>
-             <div class="email">
-                 <p>Email</p>
-                 <input type="email">
-             </div>
-             <div class="message">
-                 <p>Type your message</p>
-                <input type="text">
-             </div>
-             <button class="submit_btn">
-                 <a href="#"> Send Message</a>
-             </button>
-
+          <div class="fnames">
+            <p class="inputs">Full Names</p>
+            <input type="text" />
+          </div>
+          <div class="email">
+            <p class="inputs">Email</p>
+            <input type="email" />
+          </div>
+          <div class="message">
+            <p class="inputs">Type your message</p>
+            <input type="text" />
+          </div>
+          <button class="submit_btn">
+            <a href="#"> Send Message</a>
+          </button>
         </form>
       </div>
     </section>
+
+    <section class="education">
+        <div class="education__container">
+            <h3 class="section__title">Education</h3>
+
+        </div>
+    </section>
+
+    <script src="index.js"></script>
   </body>
 </html>

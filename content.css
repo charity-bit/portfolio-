@@ -10,6 +10,7 @@
 html {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -24,6 +25,7 @@ nav {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 20px;
 }
 .nav-links {
@@ -51,6 +53,32 @@ nav {
 .details ion-icon {
   font-size: 20px;
   background-color: blue;
+}
+
+/* .theme__container{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    
+} */
+
+/* 
+.line4{
+    height: 5 0px;
+    background-color: #05716c;
+    width: 1px;
+
+} */
+
+.theme {
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-left: 20px;
+}
+.theme ion-icon {
+  font-size: 2rem;
 }
 
 .work {
@@ -190,7 +218,7 @@ nav {
 
 .contact__me {
   color: white;
-  flex: 1;
+  width:50%;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -209,57 +237,63 @@ nav {
   text-align: justify;
 }
 
-.reachme{
-    display: flex;
-    gap: 10px;
-    align-items: center;
+.reachme {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
-.reachme ion-icon{
-    color: #05716c;
-    font-size: 2rem;
+.reachme ion-icon {
+  color: #05716c;
+  font-size: 2rem;
 }
-.reachme p{
-    font-size: 1.2rem;
+.reachme p {
+  font-size: 1.2rem;
 }
 .contact__form {
-  flex: 1;
   color: white;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 50%;
   gap: 40px;
 }
-.fnames,.email,.message{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.fnames,
+.email,
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.contact__form p{
-    font-size: 1.2rem;
+.contact__form p {
+  font-size: 1.2rem;
 }
-.contact__form input{
-    outline: none;
-    border-bottom: 1px solid #05716c;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    background-color: transparent;
+.contact__form input {
+  outline: none;
+  border-bottom: 1px solid #05716c;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
 }
-.submit_btn{
-    border: 1px solid #05716c;
-    background-color: transparent;
-    padding: 15px 0;
-    width: 30%;
-    border-radius: 10px;
-    align-self: flex-end;
+.submit_btn {
+  border: 1px solid #05716c;
+  background-color: transparent;
+  padding: 15px 0;
+  width: 30%;
+  border-radius: 10px;
+  align-self: flex-end;
+}
+.submit_btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+/* themes */
+
+.light {
+  color: #000;
+}
+.bodybg {
+  background-color: whitesmoke;
+}
+   
     
-    
-}
-.submit_btn a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-}
-
-
-

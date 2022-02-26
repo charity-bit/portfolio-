@@ -16,7 +16,6 @@ body {
   height: 100vh;
   background-image: url("https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-size: cover;
-
   background-repeat: no-repeat;
 }
 body::after {
@@ -40,6 +39,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
+  align-items: center;
 }
 .nav-links {
   display: flex;
@@ -123,10 +123,9 @@ main {
   text-align: center;
 }
 
-.county p{
-    transform: rotate(-90deg);
-    letter-spacing: 2px;
-    
+.county p {
+  transform: rotate(-90deg);
+  letter-spacing: 2px;
 }
 .line2 {
   background-color: #05716c;
@@ -134,5 +133,4 @@ main {
   align-self: center;
   height: 450px;
   max-height: 40%;
-  
 }
