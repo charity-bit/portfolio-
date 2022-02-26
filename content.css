@@ -287,6 +287,19 @@ nav {
   color: white;
   font-size: 1.2rem;
 }
+
+
+.education{
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+.education__container{
+    width: 70%;
+    padding-top:  30px ;
+}
+
 /* themes */
 
 .light {
