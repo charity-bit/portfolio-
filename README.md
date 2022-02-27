@@ -95,7 +95,7 @@ SOFTWARE.
  ## TO Do
   <ul>
     <li> Different Themes </li>
-    <li> Better Navigation for mobile< view/li>
+    <li> Better Navigation for mobile view</li>
       </ul>
  
 
