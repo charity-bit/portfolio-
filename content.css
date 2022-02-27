@@ -592,7 +592,7 @@ nav {
 
 .education {
   width: 100%;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .education__container {
@@ -637,6 +637,17 @@ nav {
 .dits h3 {
   font-weight: 300;
   font-size: 1rem;
+}
+
+footer{
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.2rem;
+}
+footer a{
+  text-decoration: none;
+  color: #05716c;
 }
 
 /* media queries */
