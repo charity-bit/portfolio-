@@ -8,7 +8,7 @@
 <hr>
 <br>
 
-<img src="">
+<img src="./images/landingpage.png">
 
 <h3>This is my personal portfolio website</h3>
 
@@ -49,7 +49,7 @@
 ---
 
 Click on the link below to view the live site
-<a href="#"><a>
+<a href="https://charity-bit.github.io/portfolio-/">https://charity-bit.github.io/portfolio-/<a>
 
 
 ---
