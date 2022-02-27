@@ -89,33 +89,142 @@ nav {
   font-size: 2rem;
 }
 
-
-.about{
+.about {
   width: 100%;
   margin-top: 50px;
 }
 
-.about__container{
+.about__container {
   width: 90%;
   margin: 70px auto;
-
-
+  display: flex;
 }
-.cv{
+.cv {
   display: flex;
   gap: 20px;
   color: #fff;
   flex-direction: column;
   width: 50%;
 }
-.cv h4{
+.cv h4 {
   font-size: 2.5rem;
   font-weight: 500;
 }
-.cv h4 span{
+.cv h4 span {
   color: #05716c;
 }
+.soft,
+.likes {
+  width: 80%;
+  text-align: justify;
+  line-height: 2;
+}
+.downloadbtn {
+  margin-top: 20px;
+  padding: 10px 0;
+  width: 30%;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #05716c;
+  transition: all 0.8s ease-in-out;
+  border-radius: 2px;
+}
+.downloadbtn:hover .down p {
+  color: #fff;
+  transition: all 0.8s ease-in-out;
+}
+.downloadbtn:hover .down ion-icon {
+  color: #fff;
+}
+.downloadbtn:hover {
+  background-color: #05716c;
+  border: none;
+}
+.down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.down ion-icon {
+  color: #05716c;
+  font-size: 2rem;
+  transition: all 0.8s ease-in-out;
+}
+.down p {
+  transition: all 0.8s ease-in-out;
+}
 
+.skills {
+  width: 50%;
+  transform: translateY(30%);
+}
+.skills_box {
+  background-color: #f5f5f5;
+  width: 40%;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 40px 30px;
+  position: relative;
+  z-index: 2;
+
+}
+.skills_box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  height: 105%;
+  background-color: #05716c;
+  transform:rotate(10deg);
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+  opacity: .8;
+}
+.skills_box:hover::after{
+  transform:rotate(0deg);
+  opacity: 0;
+}
+
+.skills_box:hover h5, .skills_box:hover .languages{
+  color: black;
+  margin-top: 20px;
+}
+
+.skills_box h5 {
+  text-align: justify;
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+  color:#fff;
+  transition: all 1s ease-in-out;
+
+}
+.skills_box h5::after {
+  content: "";
+  background-color: #05716c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 1px;
+}
+
+.languages {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  transition: all 1s ease-in-out;
+  z-index: 2;
+  color: #fff;
+}
 
 .work {
   width: 100%;
@@ -162,7 +271,6 @@ nav {
   position: relative;
 }
 
-
 /* lux project details */
 
 .lux-details {
@@ -176,7 +284,7 @@ nav {
   z-index: 2;
   transition: all 0.7s ease-in-out;
 }
-.lux:hover .lux-details{
+.lux:hover .lux-details {
   transform: translateX(10%);
   opacity: 1;
 }
@@ -187,15 +295,15 @@ nav {
 }
 .lux::after {
   content: "";
-  bottom:5%;
+  bottom: 5%;
   right: 0;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   background-color: black;
   opacity: 0;
   position: absolute;
 }
-.lux:hover::after{
+.lux:hover::after {
   opacity: 0.5;
 }
 .quizapp {
@@ -205,7 +313,7 @@ nav {
 }
 
 /* quiz app project details */
-.quiz-details{
+.quiz-details {
   position: absolute;
   color: white;
   max-width: 200px;
@@ -215,8 +323,6 @@ nav {
   opacity: 0;
   z-index: 2;
   transition: all 0.7s ease-in-out;
-
-
 }
 
 .quizapp:hover .quiz-details {
@@ -226,19 +332,17 @@ nav {
 
 .quizapp::after {
   content: "";
-  bottom:5%;
+  bottom: 5%;
   right: 0;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   background-color: black;
   opacity: 0;
   position: absolute;
 }
-.quizapp:hover::after{
+.quizapp:hover::after {
   opacity: 0.5;
 }
-
-
 
 .quizapp img {
   height: 95%;
@@ -250,9 +354,8 @@ nav {
   position: relative;
 }
 
-
 /* insurance website details */
-.ins-details{
+.ins-details {
   position: absolute;
   color: white;
   max-width: 200px;
@@ -262,8 +365,6 @@ nav {
   opacity: 0;
   z-index: 2;
   transition: all 0.7s ease-in-out;
-
-
 }
 
 .ins:hover .ins-details {
@@ -273,15 +374,15 @@ nav {
 
 .ins::after {
   content: "";
-  bottom:0;
+  bottom: 0;
   right: 0;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   background-color: black;
   opacity: 0;
   position: absolute;
 }
-.ins:hover::after{
+.ins:hover::after {
   opacity: 0.5;
 }
 
@@ -297,7 +398,7 @@ nav {
 }
 
 /* gallery project details */
-.gallery-details{
+.gallery-details {
   position: absolute;
   color: white;
   max-width: 200px;
@@ -307,8 +408,6 @@ nav {
   opacity: 0;
   z-index: 2;
   transition: all 0.7s ease-in-out;
-
-
 }
 
 .app_gallery:hover .gallery-details {
@@ -318,18 +417,17 @@ nav {
 
 .app_gallery::after {
   content: "";
-  bottom:5%;
+  bottom: 5%;
   right: 0;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   background-color: black;
   opacity: 0;
   position: absolute;
 }
-.app_gallery:hover::after{
+.app_gallery:hover::after {
   opacity: 0.5;
 }
-
 
 .app_gallery img {
   height: 95%;
@@ -342,8 +440,7 @@ nav {
   position: relative;
 }
 
-
-.netflix-details{
+.netflix-details {
   position: absolute;
   color: white;
   max-width: 200px;
@@ -353,8 +450,6 @@ nav {
   opacity: 0;
   z-index: 2;
   transition: all 0.7s ease-in-out;
-
-
 }
 
 .netflix:hover .netflix-details {
@@ -364,18 +459,17 @@ nav {
 
 .netflix::after {
   content: "";
-  bottom:5%;
+  bottom: 5%;
   right: 0;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   background-color: black;
   opacity: 0;
   position: absolute;
 }
-.netflix:hover::after{
+.netflix:hover::after {
   opacity: 0.5;
 }
-
 
 .netflix img {
   height: 95%;
@@ -390,12 +484,12 @@ nav {
   color: #fff;
   text-decoration: none;
   position: relative;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.details a:hover{
+.details a:hover {
   color: #05716c;
 }
-.details a:hover::before{
+.details a:hover::before {
   background-color: #fff;
 }
 .details a::before {
@@ -407,8 +501,7 @@ nav {
   height: 5px;
   width: 5px;
   border-radius: 50%;
-  transition: all .5s ease-in-out;
-
+  transition: all 0.5s ease-in-out;
 }
 .projects img {
   border-radius: 5px;
