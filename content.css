@@ -641,7 +641,22 @@ nav {
 
 /* media queries */
 
-@media screen and (max-width: 345px){
+@media screen and (max-width: 400px){
+
+.socials{
+  display: none;
+}
+header{
+  position: fixed;
+  background-color: #000;
+  z-index: 1000;
+}
+nav{
+  background-color: #000;
+  z-index: 1000;
+}
+
+
   .cv {
     width: 100%;
   }
@@ -658,7 +673,7 @@ nav {
   }
   
   .downloadbtn{
-    width: 60%;
+    width: 70%;
   }
   .dits h2{
     font-size: 1rem;
