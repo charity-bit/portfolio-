@@ -58,10 +58,13 @@ nav {
   gap: 20px;
 }
 
+
 .socials a {
   color: white;
   font-size: 1.5rem;
+  transition: top .5s ease-in-out; 
 }
+
 
 main {
   position: absolute;

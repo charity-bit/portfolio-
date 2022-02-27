@@ -157,7 +157,7 @@ nav {
 
 .skills {
   width: 50%;
-  transform: translateY(30%);
+  transform: translateY(10%);
 }
 .skills_box {
   background-color: #f5f5f5;
@@ -171,7 +171,6 @@ nav {
   padding: 40px 30px;
   position: relative;
   z-index: 2;
-
 }
 .skills_box::after {
   content: "";
@@ -182,17 +181,18 @@ nav {
   bottom: 20px;
   height: 105%;
   background-color: #05716c;
-  transform:rotate(10deg);
+  transform: rotate(10deg);
   border-radius: 10px;
   transition: all 1s ease-in-out;
-  opacity: .8;
+  opacity: 0.8;
 }
-.skills_box:hover::after{
-  transform:rotate(0deg);
+.skills_box:hover::after {
+  transform: rotate(0deg);
   opacity: 0;
 }
 
-.skills_box:hover h5, .skills_box:hover .languages{
+.skills_box:hover h5,
+.skills_box:hover .languages {
   color: black;
   margin-top: 20px;
 }
@@ -203,9 +203,8 @@ nav {
   font-weight: 500;
   position: relative;
   z-index: 2;
-  color:#fff;
+  color: #fff;
   transition: all 1s ease-in-out;
-
 }
 .skills_box h5::after {
   content: "";
@@ -529,13 +528,12 @@ nav {
 
 .contact__me h1 {
   font-weight: 600;
-  letter-spacing: 2;
   font-size: 2.5rem;
 }
 .collaborate {
   font-size: 1.2rem;
   font-weight: 300;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   width: 80%;
   text-align: justify;
 }
@@ -583,7 +581,7 @@ nav {
   background-color: transparent;
   padding: 15px 0;
   width: 30%;
-  border-radius: 10px;
+  border-radius: 5px;
   align-self: flex-end;
 }
 .submit_btn a {
@@ -639,6 +637,136 @@ nav {
 .dits h3 {
   font-weight: 300;
   font-size: 1rem;
+}
+
+/* media queries */
+
+@media screen and (max-width: 345px){
+  .cv {
+    width: 100%;
+  }
+  .soft,
+  .likes {
+    width: 100%;
+  }
+  .skills_box {
+    width: 150px;
+  }
+  .projects {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .downloadbtn{
+    width: 60%;
+  }
+  .dits h2{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about__container {
+    flex-direction: column;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c" "d" "e";
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .cv {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .soft,
+  .likes {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .skills {
+    width: 100%;
+  }
+  .skills_box {
+    margin-top: 50px;
+    height: 200px;
+    width: 200px;
+  }
+
+  html {
+    font-size: 10px;
+  }
+  .contact__container {
+    flex-direction: column;
+  }
+  .contact__me {
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  .contact__form {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .collaborate {
+    width: 100%;
+  }
+
+  .education__container {
+    width: 90%;
+  }
+  .dits h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 10px;
+  }
+  .about {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact__me {
+    gap: 20px;
+  }
+  .about__container {
+    width: 100%;
+    gap: 10px;
+  }
+  .projects {
+    width: 100%;
+  }
+  .downloadbtn {
+    min-width: 50%;
+  }
+  .cv {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .skills {
+    width: 30%;
+    margin: 0 auto;
+    transform: translateX(-25%);
+  }
+  .skills_box {
+    height: 200px;
+    width: 200px;
+  }
+  .dits h2 {
+    font-size: 1.5rem;
+  }
+  .submit_btn {
+    width: 50%;
+  }
 }
 /* themes */
 
