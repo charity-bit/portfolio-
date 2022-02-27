@@ -134,6 +134,9 @@ nav {
   position: relative;
 }
 
+
+/* lux project details */
+
 .lux-details {
   position: absolute;
   color: white;
@@ -142,9 +145,10 @@ nav {
   font-size: 1.2rem;
   text-align: left;
   opacity: 0;
-  transition: all .7s ease-in-out;
+  z-index: 2;
+  transition: all 0.7s ease-in-out;
 }
-.lux:hover p {
+.lux:hover .lux-details{
   transform: translateX(10%);
   opacity: 1;
 }
@@ -153,21 +157,60 @@ nav {
   width: 100%;
   position: relative;
 }
-.lux img::after {
+.lux::after {
   content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
+  bottom:5%;
   right: 0;
+  top:0;
+  left:0;
   background-color: black;
-  opacity: 1;
-  position:absolute;
-  z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+.lux:hover::after{
+  opacity: 0.5;
 }
 .quizapp {
   grid-area: b;
   max-height: 300px;
+  position: relative;
 }
+
+/* quiz app project details */
+.quiz-details{
+  position: absolute;
+  color: white;
+  max-width: 200px;
+  top: 10%;
+  font-size: 1.2rem;
+  text-align: left;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.7s ease-in-out;
+
+
+}
+
+.quizapp:hover .quiz-details {
+  transform: translateX(10%);
+  opacity: 1;
+}
+
+.quizapp::after {
+  content: "";
+  bottom:5%;
+  right: 0;
+  top:0;
+  left:0;
+  background-color: black;
+  opacity: 0;
+  position: absolute;
+}
+.quizapp:hover::after{
+  opacity: 0.5;
+}
+
+
 
 .quizapp img {
   height: 95%;
@@ -176,6 +219,42 @@ nav {
 .ins {
   grid-area: c;
   max-height: 600px;
+  position: relative;
+}
+
+
+/* insurance website details */
+.ins-details{
+  position: absolute;
+  color: white;
+  max-width: 200px;
+  top: 10%;
+  font-size: 1.2rem;
+  text-align: left;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.7s ease-in-out;
+
+
+}
+
+.ins:hover .ins-details {
+  transform: translateX(10%);
+  opacity: 1;
+}
+
+.ins::after {
+  content: "";
+  bottom:0;
+  right: 0;
+  top:0;
+  left:0;
+  background-color: black;
+  opacity: 0;
+  position: absolute;
+}
+.ins:hover::after{
+  opacity: 0.5;
 }
 
 .ins img {
@@ -186,7 +265,43 @@ nav {
 .app_gallery {
   grid-area: d;
   max-height: 300px;
+  position: relative;
 }
+
+/* gallery project details */
+.gallery-details{
+  position: absolute;
+  color: white;
+  max-width: 200px;
+  top: 10%;
+  font-size: 1.2rem;
+  text-align: left;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.7s ease-in-out;
+
+
+}
+
+.app_gallery:hover .gallery-details {
+  transform: translateX(10%);
+  opacity: 1;
+}
+
+.app_gallery::after {
+  content: "";
+  bottom:5%;
+  right: 0;
+  top:0;
+  left:0;
+  background-color: black;
+  opacity: 0;
+  position: absolute;
+}
+.app_gallery:hover::after{
+  opacity: 0.5;
+}
+
 
 .app_gallery img {
   height: 95%;
@@ -196,7 +311,43 @@ nav {
 .netflix {
   grid-area: e;
   max-height: 300px;
+  position: relative;
 }
+
+
+.netflix-details{
+  position: absolute;
+  color: white;
+  max-width: 200px;
+  top: 10%;
+  font-size: 1.2rem;
+  text-align: left;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.7s ease-in-out;
+
+
+}
+
+.netflix:hover .netflix-details {
+  transform: translateX(10%);
+  opacity: 1;
+}
+
+.netflix::after {
+  content: "";
+  bottom:5%;
+  right: 0;
+  top:0;
+  left:0;
+  background-color: black;
+  opacity: 0;
+  position: absolute;
+}
+.netflix:hover::after{
+  opacity: 0.5;
+}
+
 
 .netflix img {
   height: 95%;
@@ -211,6 +362,13 @@ nav {
   color: #fff;
   text-decoration: none;
   position: relative;
+  transition: all .5s ease-in-out;
+}
+.details a:hover{
+  color: #05716c;
+}
+.details a:hover::before{
+  background-color: #fff;
 }
 .details a::before {
   content: "";
@@ -221,6 +379,8 @@ nav {
   height: 5px;
   width: 5px;
   border-radius: 50%;
+  transition: all .5s ease-in-out;
+
 }
 .projects img {
   border-radius: 5px;
@@ -294,6 +454,7 @@ nav {
   border-top: none;
   border-left: none;
   border-right: none;
+  color: #fff;
   background-color: transparent;
 }
 .submit_btn {
