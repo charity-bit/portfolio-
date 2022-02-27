@@ -38,6 +38,10 @@ nav {
   text-decoration: none;
   font-size: 1.5rem;
   font-size: 400;
+  transition: color 0.5s ease-in-out;
+}
+.nav-link a:hover {
+  color: #05716c;
 }
 
 .socials {
@@ -48,6 +52,10 @@ nav {
 .socials a {
   color: white;
   font-size: 1.5rem;
+  transition: color 0.5s ease-in-out;
+}
+.socials a:hover {
+  color: #05716c;
 }
 
 .details ion-icon {
@@ -123,24 +131,38 @@ nav {
 .lux {
   grid-area: a;
   max-height: 300px;
-  /* position: relative; */
+  position: relative;
 }
 
-/* .lux p{
-    position: absolute;
-    color: white;
-    max-width: 200px;
-    top:50%;
-    left:50%;
-    opacity: 0;;
-    transition: translate(-50%,-50%)
+.lux-details {
+  position: absolute;
+  color: white;
+  max-width: 200px;
+  top: 10%;
+  font-size: 1.2rem;
+  text-align: left;
+  opacity: 0;
+  transition: all .7s ease-in-out;
 }
-.lux:hover p{
-    opacity: 1;
-} */
+.lux:hover p {
+  transform: translateX(10%);
+  opacity: 1;
+}
 .lux img {
   height: 95%;
   width: 100%;
+  position: relative;
+}
+.lux img::after {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  opacity: 1;
+  position:absolute;
+  z-index: -1;
 }
 .quizapp {
   grid-area: b;
@@ -218,7 +240,7 @@ nav {
 
 .contact__me {
   color: white;
-  width:50%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -288,18 +310,54 @@ nav {
   font-size: 1.2rem;
 }
 
-
-.education{
-    width: 100%;
-    margin-top: 50px;
+.education {
+  width: 100%;
+  margin-top: 50px;
 }
 
-
-.education__container{
-    width: 70%;
-    padding-top:  30px ;
+.education__container {
+  width: 70%;
+  padding-top: 50px;
+  color: #fff;
+  margin: 0 auto;
+  gap: 50px;
 }
 
+.education__container ion-icon {
+  font-size: 1.5rem;
+  color: #05716c;
+}
+
+.edu_section {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+.vline {
+  height: 100px;
+  max-height: 50%;
+  background-color: #05716c;
+  width: 1px;
+}
+
+.education__details {
+  width: 80%;
+}
+
+.dits p {
+  color: #05716c;
+  margin-bottom: 5px;
+}
+.dits h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.dits h3 {
+  font-weight: 300;
+  font-size: 1rem;
+}
 /* themes */
 
 .light {
@@ -308,5 +366,3 @@ nav {
 .bodybg {
   background-color: whitesmoke;
 }
-   
-    
