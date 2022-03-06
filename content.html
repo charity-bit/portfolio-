@@ -17,6 +17,10 @@
   </head>
   <body>
     <header>
+      <button id="show-hide" class="shownav">
+        <ion-icon class="menu" name="menu-outline"></ion-icon>
+      </button>
+
       <nav>
         <ul class="nav-links">
           <li class="nav-link"><a class="navi" href="#work">Work</a></li>
@@ -37,6 +41,12 @@
           <a href="https://github.com/charity-bit"
             ><ion-icon name="logo-github"></ion-icon
           ></a>
+
+          <button id="hide-menu" class="shownav">
+            <ion-icon class="menu"
+            name="arrow-back-outline"></ion-icon>
+          </button>    
+
           <button class="theme">
             <ion-icon name="sunny-outline"></ion-icon>
           </button>
@@ -48,9 +58,10 @@
       <h3 class="section__title">About Me</h3>
       <div class="about__container">
         <div class="cv">
-          <h4>Hi there! I am 
-             <span>Charity</span>
-            </h4>
+          <h4>
+            Hi there! I am
+            <span>Charity</span>
+          </h4>
           <p class="soft">
             I am software developer particularly passionate about frontEnd Web
             developement putting a keen eye on UI/UX design.I believe software
@@ -68,9 +79,7 @@
             <div class="down">
               <ion-icon name="download-outline"></ion-icon>
               <p>DOWNLOAD CV</p>
-  
             </div>
-            
           </button>
         </div>
         <div class="skills">
@@ -86,7 +95,6 @@
                 <p>REACT</p>
               </div>
             </div>
-           
           </div>
         </div>
       </div>
@@ -265,11 +273,12 @@
     </section>
 
     <footer>
-      <p>Made by<a href="https://github.com/charity-bit"> charity-bit</a>
-      &copy 2022
+      <p>
+        Made by<a href="https://github.com/charity-bit"> charity-bit</a>
+        &copy 2022
       </p>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="content.js"></script>
   </body>
 </html>

@@ -63,6 +63,7 @@ nav {
   background-color: blue;
 }
 
+
 /* .theme__container{
     display: flex;
     flex-direction: column;
@@ -639,34 +640,82 @@ nav {
   font-size: 1rem;
 }
 
-footer{
+footer {
   width: 50%;
   margin: 0 auto;
   color: #fff;
   font-size: 1.2rem;
 }
-footer a{
+footer a {
   text-decoration: none;
   color: #05716c;
 }
 
 /* media queries */
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
+  .theme {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 
-.socials{
-  display: none;
-}
-header{
-  position: fixed;
-  background-color: #000;
-  z-index: 1000;
-}
-nav{
-  background-color: #000;
-  z-index: 1000;
-}
 
+  .shownav{
+    left: 20px;
+    position: absolute;
+    top:20px;
+    background-color: transparent;
+    color: #fff;
+    border:none;
+  }
+  .menu {
+    font-size: 3rem;
+  }
+
+  .showitems{
+    left:-1%;
+  }
+
+
+  header{
+    background-color: #000;
+    display: flex;
+  }
+  nav {
+    position: fixed;
+    left:-70%;
+    height: 100vh;
+    width: 70%;
+    background-color: #000;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 70px;
+    margin-left: 20px;
+    transition: left 1s ease-in-out;
+
+  }
+  .nav-links {
+    flex-direction: column;
+    text-align: left;
+    gap: 70px;
+    text-transform: uppercase;
+  }
+  .nav-link a {
+    position: relative;
+  }
+
+  .nav-link a::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    height: 1px;
+    width: 200px;
+    background-color: #05716c;
+  }
 
   .cv {
     width: 100%;
@@ -682,11 +731,11 @@ nav{
     width: 100%;
     margin: 0 auto;
   }
-  
-  .downloadbtn{
+
+  .downloadbtn {
     width: 70%;
   }
-  .dits h2{
+  .dits h2 {
     font-size: 1rem;
     font-weight: 600;
   }
